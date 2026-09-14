@@ -32,7 +32,7 @@ BOT_TOKEN = "Your Bot token"
 ADMIN_IDS = [123456789]
 TEACHER_PASSWORD = "1234"
 TEACHER_AUTH = set()
-ANSWER_VIEWER_NAMES = {"muy lyly", "heng"}
+ANSWER_VIEWER_NAMES = {"User 1", "user 2"}
 CHECK_ACCESS = set()
 
 SCORES_FILE = "scores.json"
@@ -1243,8 +1243,8 @@ def main():
     app.add_handler(CommandHandler("give", give_access))
     app.add_handler(CommandHandler("message", send_user_message))
     app.add_handler(CommandHandler("servertime", send_server_time))
-    app.add_handler(CommandHandler("muylyly", check_answers))
-    app.add_handler(CommandHandler("heng", check_answers))
+    app.add_handler(CommandHandler("user 1", check_answers))
+    app.add_handler(CommandHandler("user 2", check_answers))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(ChatMemberHandler(bot_added_to_group, ChatMemberHandler.MY_CHAT_MEMBER))
     app.add_handler(CallbackQueryHandler(handle_role_selection, pattern="^role:"))
