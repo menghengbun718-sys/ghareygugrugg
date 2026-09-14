@@ -26,7 +26,7 @@ from telegram.ext import (
 # SETTINGS
 # =========================
 
-BOT_TOKEN = "8686214579:AAFvd6ZMY_3uz5HkVcLunzoz2zh-10VoVYQ"
+BOT_TOKEN = "Your Bot token"
 
 # Teacher Telegram User ID
 ADMIN_IDS = [123456789]
